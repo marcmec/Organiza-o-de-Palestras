@@ -107,6 +107,11 @@ Otimizando CSS em aplicações Rails 30min
 ## Instruções
 Você deve produzir uma solução para o problema acima utilizando **qualquer linguagem de programação**.
 No diretório raiz do repositório, você encontrará o arquivo ***proposals.txt***, que contém a lista de palestras que deverão ser organizadas. Seu programa deverá ser capaz de ler este arquivo e processar cada uma das palestras, para que o resultado seja exibido no formato especificado no exemplo exibido acima.
+
 Espera-se que você encaminhe um código que acredite ser de qualidade, um código que funcione e que tenha sido evoluído no decorrer de seu desenvolvimento.
+
+Obs:
+
+Na hora de executar o código, será testada outra entrada semelhante, para comprovação da solução.
 
 Outro requisito é o envio dos testes que você produziu para verificar sua solução. Independente de serem feitos antes ou depois de criada a implementação, queremos ter a chance de observar sua habilidade em produzi-los e verificar as regras do problema.
