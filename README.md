@@ -1,117 +1,61 @@
-# Organização de palestras de uma conferência
+## Organizador de Palestras para Conferências
 
-Você está planejando uma grande conferencia de programação e recebeu diversas propostas de palestras, mas você está com problemas para organizá-las de acordo com as restrições de tempo do dia - existem tantas possibilidades! Então, você decide escrever um programa para fazer isso por você.
+Este projeto é um organizador automático de palestras para conferências, desenvolvido em Python. Ele aloca palestras em sessões matinais e vespertinas, respeitando as restrições de tempo de cada parte do dia e ajustando automaticamente a quantidade de dias necessárias com base na quantidade de palestras fornecidas.
 
-1. A conferencia tem várias tracks, cada qual tendo uma sessão pela manhã e outra pela tarde.
-2. Cada sessão contém várias palestras.
-3. Sessões pela manhã começam às 9h e devem terminar às 12h, para o almoço.
-4. Sessões pela tarde começam às 13h e devem terminar a tempo de realizar o evento de networking.
-5. O evento de networking deve começar depois das 16h, mas antes das 17h.
-6. Nenhum dos nomes das palestras possui números.
-7. A duração de todas as palestras são fornecidas em minutos ou definidas como lightning (palestras de 5 minutos).
-8. Os palestrantes serão bastante pontuais, então não há a necessidade de intervalos entre as palestras.
+## Objetivo
 
-Observe que, dependendo de como você decida completar esse problema, sua solução pode trazer as palestras em ordem ou combinação diferentes dentro das tracks. Isso é aceitável; você não precisa replicar, exatamente, o resultado fornecido como exemplo de solução.
-Mas o resultado produzido deverá atender às regras especificadas.
+Automatizar a alocação de palestras em **dias** de conferência, divididas em:
+- **Sessão da manhã:** 09:00 às 12:00
+- **Sessão da tarde:** 13:00 até no máximo 17:00 (com evento de networking a partir das 16:00)
 
-## Dados a serem usados para teste:
-Diminuindo tempo de execução de testes em aplicações Rails enterprise 60min
+## 📝 Formato do Arquivo de Entrada
 
-Reinventando a roda em ASP clássico 45min
+O arquivo `.txt` deve conter uma palestra por linha, com o seguinte formato:
+Nome da palestra DURAÇÃO
+- Duração deve terminar com `min` ou ser `lightning` (que será tratado como 5 minutos).
 
-Apresentando Lua para as massas 30min
-
-Erros de Ruby oriundos de versões erradas de gems 45min
-
-Erros comuns em Ruby 45min
-
-Rails para usuários de Django lightning
-
-Trabalho remoto: prós e cons 60min
-
-Desenvolvimento orientado a gambiarras 45min
-
-Aplicações isomórficas: o futuro (que talvez nunca chegaremos) 30min
-
-Codifique menos, Escreva mais! 30min
-
-Programação em par 45min
-
-A mágica do Rails: como ser mais produtivo 60min
-
-Ruby on Rails: Por que devemos deixá-lo para trás 60min
-
-Clojure engoliu Scala: migrando minha aplicação 45min
-
-Ensinando programação nas grotas de Maceió 30min
-
-Ruby vs. Clojure para desenvolvimento backend 30min
-
-Manutenção de aplicações legadas em Ruby on Rails 60min
-
-Um mundo sem StackOverflow 30min
-
-Otimizando CSS em aplicações Rails 30min
+## Exemplos válidos:
+Escrevendo código limpo 60min
+Arquitetura de Software 60min
+Big Data e Analytics 60min
 
 
-## Modelo do resultado esperado após execução da organização: 
+## ▶️ Como Executar
 
-#### Track A:
-09:00 Diminuindo tempo de execução de testes em aplicações Rails enterprise 60min
+1. Certifique-se de ter o Python 3 instalado.
+2. Abra o terminal na pasta do projeto.
+3. Execute:
 
-10:00 Reinventando a roda em ASP clássico 45min
+```bash
+python organizador.py
+```
 
-10:45 Apresentando Lua para as massas 30min
+4. Quando solicitado, digite o nome do arquivo .txt com as palestras (ex: palestras_teste.txt).
 
-11:15 Erros de Ruby oriundos de versões erradas de gems 45min
+## Exemplo de Saída
 
+Dia 1:
+09:00 Escrevendo código limpo 60min
+10:00 Testes automatizados com Pytest 45min
+...
 12:00 Almoço
+13:00 API REST com Flask 45min
+...
+16:00 Evento de Networking
 
-13:00 Ruby on Rails: Por que devemos deixá-lo para trás 60min
+Dia 2:
+09:00 Docker e Kubernetes 60min
+...
+16:00 Evento de Networking
 
-14:00 Erros comuns em Ruby 45min
+OBS: O número de dias é determinado automaticamente conforme a necessidade para encaixar todas as palestras.
 
-14:45 Programação em par 45min
 
-15:30 Ensinando programação nas grotas de Maceió 30min
 
-16:00 Ruby vs. Clojure para desenvolvimento backend 30min
 
-16:30 Otimizando CSS em aplicações Rails 30min
 
-17:00 Evento de Networking
 
-#### Track B:
-09:00 Trabalho remoto: prós e cons 60min
 
-10:00 A mágica do Rails: como ser mais produtivo 60min
 
-11:00 Aplicações isomórficas: o futuro (que talvez nunca chegaremos) 30min
 
-11:30 Codifique menos, Escreva mais! 30min
 
-12:00 Almoço
-
-13:00 Desenvolvimento orientado a gambiarras 45min
-
-13:45 Clojure engoliu Scala: migrando minha aplicação 45min
-
-14:30 Um mundo sem StackOverflow 30min
-
-15:00 Manutenção de aplicações legadas em Ruby on Rails 60min
-
-16:00 Rails para usuários de Django lightning
-
-17:00 Evento de Networking
-
-## Instruções
-Você deve produzir uma solução para o problema acima utilizando **qualquer linguagem de programação**.
-No diretório raiz do repositório, você encontrará o arquivo ***proposals.txt***, que contém a lista de palestras que deverão ser organizadas. Seu programa deverá ser capaz de ler este arquivo e processar cada uma das palestras, para que o resultado seja exibido no formato especificado no exemplo exibido acima.
-
-Espera-se que você encaminhe um código que acredite ser de qualidade, um código que funcione e que tenha sido evoluído no decorrer de seu desenvolvimento.
-
-Obs:
-
-Na hora de executar o código, será testada outra entrada semelhante, para comprovação da solução.
-
-Outro requisito é o envio dos testes que você produziu para verificar sua solução. Independente de serem feitos antes ou depois de criada a implementação, queremos ter a chance de observar sua habilidade em produzi-los e verificar as regras do problema.
