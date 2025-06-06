@@ -1,0 +1,10 @@
+Escrevendo código limpo 60min
+Microserviços na prática 45min
+Introdução a Machine Learning 30min
+Cultura DevOps relâmpago
+Desenvolvimento Web com Django 45min
+Testes automatizados em projetos ágeis 30min
+Arquitetura de Software 60min
+APIs RESTful com Flask 45min
+Big Data e Analytics 60min
+Boas práticas em Git relâmpago
