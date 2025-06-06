@@ -1,3 +1,18 @@
+# Organizador de Palestras
+
+## Requisitos:
+- Rust (gerenciador de pacotes Cargo e compilador rustc) instalado
+
+## Executando o projeto:
+`cd caminho/para/o/Organiza-o-de-Palestras`
+
+`cargo run`
+
+## Executando teste:
+`cargo test`
+
+# Problema:
+
 # Organização de palestras de uma conferência
 
 Você está planejando uma grande conferencia de programação e recebeu diversas propostas de palestras, mas você está com problemas para organizá-las de acordo com as restrições de tempo do dia - existem tantas possibilidades! Então, você decide escrever um programa para fazer isso por você.
@@ -54,7 +69,7 @@ Um mundo sem StackOverflow 30min
 Otimizando CSS em aplicações Rails 30min
 
 
-## Modelo do resultado esperado após execução da organização: 
+## Modelo do resultado esperado após execução da organização:
 
 #### Track A:
 09:00 Diminuindo tempo de execução de testes em aplicações Rails enterprise 60min
