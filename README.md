@@ -58,6 +58,11 @@
    ou
    ```cmd
    py main.py proposals.txt
+   
+   ```
+5. **Executar teste:**
+   ```bash
+   python3 organizer-test.py proposals.txt
    ```
 
 ## No Linux
@@ -104,6 +109,11 @@
    python3 main.py proposals.txt
    ```
 
+5. **Executar teste:**
+   ```bash
+   python3 organizer-test.py proposals.txt
+   ```
+
 ## Formato de entrada
 
-**Nome da Palestra XXmin** ou **Nome da Palestra lightning**
+*Nome da Palestra XXmin* ou *Nome da Palestra lightning*
