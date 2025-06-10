@@ -144,7 +144,7 @@ def gerar_saida(tracks: List[Track]) -> str:
     
     return "\n".join(saida)
 
-def main(arquivo_entrada: str = "proposals.txt"):
+def main(arquivo_entrada: str = "proposals2.txt"):
     # Lê o arquivo de entrada
     with open(arquivo_entrada, 'r', encoding='utf-8') as f:
         linhas = f.readlines()
