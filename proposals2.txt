@@ -1,0 +1,10 @@
+Introdução ao Python 45min
+Machine Learning para iniciantes 60min
+Desenvolvimento Web com Django lightning
+Análise de Dados com Pandas 30min
+Segurança em Aplicações Web 60min
+Testes Automatizados em Python 45min
+APIs REST com Flask 30min
+Banco de Dados NoSQL 60min
+Programação Funcional em Python lightning
+Deploy de Aplicações Python 45min
